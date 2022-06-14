@@ -56,34 +56,52 @@ A US based bike-sharing system wants to know
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+- We have variables like temp which is lineraly related to cnt. So linear regression makes sense here.
+- Predictors for cnt and their coefficients are
+   const         0.0984
+   yr            0.2336
+   workingday    0.0555
+   temp          0.5395
+   windspeed    -0.1637
+   summer        0.0745
+   winter        0.1153
+   jan          -0.0460
+   july         -0.0360
+   sep           0.0869
+   sat           0.0676
+   Light_Snow   -0.2878
+   Misty        -0.0799
+- Equation of the model is
+   cnt = 0.2336yr + 0.0555workingday + 0.5395temp - 0.1637windspeed + 0.0745summer + 0.1153winter - 0.0460jan - 0.0360july + 0.0869sep + 0.0676sat - 0.2878Light_Snow - 0.0799Misty + 0.0984
+- There is a significant rise in count(cnt) from 2018 (0) to 1 (2019).
+- There is a drastic drop in count(cnt) in the month of Dec and Nov.
+- When wheather is clear then count(cnt) is higher and when its Light and snow its drastically low.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+- python - 3.9.7
+- numpy - 1.20.3
+- pandas - 1.3.4
+- matplotlib - 3.4.3
+- seaborn - 0.11.2
+- sklearn - 0.24.2
+- statsmodels - 0.12.2
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
 ## Acknowledgements
 Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+- This project was inspired by Linear Regression Model learning at Upgrade as part of AI/ML course.
+- This project was based on [this tutorial](https://learn.upgrad.com/course/1991/segment/16594/129672/396956/2065942).
 
 
 ## Contact
 Created by [@kc11381] - feel free to contact me!
 
 
-<!-- Optional -->
-<!-- ## License -->
+## License
 Dataset(day.csv) License
 [1] Fanaee-T, Hadi, and Gama, Joao, "Event labeling combining ensemble detectors and background knowledge", Progress in Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg, doi:10.1007/s13748-013-0040-3.
 
