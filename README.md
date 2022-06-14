@@ -26,7 +26,7 @@ A US based bike-sharing system wants to know
 - We need to find the predictors and their effect for count(total bike shared) so that company can take an informed decision.
   A linear regression model is used here.
 - Dataset - Bike sharing dataset is used. 
-  - It is provide at upgrad (https://ml-course2-upgrad.s3.amazonaws.com/Linear+Regression+Assignment/Bike+Sharing+Assignment/day.csv)
+  - It is provided at upgrad (https://ml-course2-upgrad.s3.amazonaws.com/Linear+Regression+Assignment/Bike+Sharing+Assignment/day.csv)
     =========================================
     Dataset characteristics
     =========================================	
